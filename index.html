@@ -11,16 +11,19 @@
 </head>
 <body>
     <!--Navigation-->
-    <div class="navigation w3-bar w3-black">
-        <span class="branding w3-bar-item w3-mobile">Shanga</span>
-        <span class="w3-bar-item w3-mobile ">
-            <a href="#Home" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
-        <a href="#About" class="w3-bar-item w3-button w3-mobile w3-hover-red">About</a>
-        <a href="#Services" class="w3-bar-item w3-button w3-mobile w3-hover-red">Services</a>
-        <a href="#Contacts" class="w3-bar-item w3-button w3-mobile w3-hover-red">contacts</a>
-        </span>
-        
-      </div>
+    <div class="w3-top">
+        <div class="navigation w3-bar w3-black">
+            <span class="branding w3-bar-item w3-mobile">Shanga</span>
+            <span class="w3-bar-item w3-mobile ">
+                <a href="#Home" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
+            <a href="#About" class="w3-bar-item w3-button w3-mobile w3-hover-red">About</a>
+            <a href="#Services" class="w3-bar-item w3-button w3-mobile w3-hover-red">Services</a>
+            <a href="#Contacts" class="w3-bar-item w3-button w3-mobile w3-hover-red">Contacts</a>
+            </span>
+            
+          </div>
+    </div>
+    
       <!--Showcase-->
       <section class="showcase">
         <div class="w3-cointainer w3-center">
@@ -37,5 +40,57 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero mollitia voluptatum obcaecati laborum aliquid</p>
         </div>
       </section>
+      <!--SECTION 2-->
+      <section class="section w3-light-grey w3-hover-opacity">
+        <div class="w3-cointainer w3-center">
+            <i class="fa fa-cog"></i>
+            <h2>Let's Begin</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero mollitia voluptatum obcaecati laborum aliquid</p>
+        </div>
+      </section>
+      <!--About-->
+      <section class="section">
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-col m5">
+              <img src="img/about.jpg" alt="">
+            </div>
+            <div class="w3-col m7">
+              <button onclick="shangaFunction('what')" class="w3-button w3-block w3-left-align w3-black">
+                What we do
+              </button>
+              <div id="what" class="w3-container w3-show ">
+                <h3>We do it all</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus maxime deleniti distinctio itaque obcaecati corrupti quas maiores, quos nesciunt enim id voluptatibus, necessitatibus labore quaerat facilis at, tempore ea a.</p>
+              </div>
+              <button onclick="shangaFunction('who')" class="w3-button w3-block w3-left-align w3-black">
+                We Are Shanga
+              </button>
+              <div id="who" class="w3-container w3-hide">
+                <h3>We Are Shanga</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus maxime deleniti distinctio itaque obcaecati corrupti quas maiores, quos nesciunt enim id voluptatibus, necessitatibus labore quaerat facilis at, tempore ea a.</p>
+              </div>
+              <button onclick="shangaFunction('where')" class="w3-button w3-block w3-left-align w3-black">
+                We Are Everywhere
+              </button>
+              <div id="where" class="w3-container w3-hide">
+                <h3>We Are Located Everywhere</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint, omnis ipsum minima quidem amet magnam ullam corrupti cupiditate dolores, ad soluta doloremque adipisci, architecto quasi fuga dolore explicabo ipsam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        function shangaFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
 </body>
 </html>
