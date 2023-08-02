@@ -1,0 +1,25 @@
+.branding{
+    font-size: 17px;
+
+}
+.showcase{
+    background:url(../img/showcase.jpg) no-repeat  ;
+    height:600px ;
+    background-position: center;
+    padding: 140px 100px;
+}
+.showcase h1{
+    font-size: 40px;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+.showcase hr{
+    width: 100px;
+    margin: auto;
+    border-width: 3px;
+    border-color: #f44336;
+}
+.showcase p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
