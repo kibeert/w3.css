@@ -29,7 +29,7 @@
         <div class="w3-cointainer w3-center">
             <h1 class="w3-text-shadow w3-animate-opacity">Go Anywhere</h1><hr>
             <p class="w3-animate-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis. Dolor ducimus veritatis repudiandae suscipit, reiciendis quod, praesentium harum numquam dolores dolore quis non eaque adipisci veniam perspiciatis quos quibusdam?</p>
-            <button class="w3-button w3-red w3-large w3-opacity">Start Here</button>
+            <button onclick="getElementById('start-modal').style.display='block'" class="w3-button w3-red w3-large w3-opacity">Start Here</button>
         </div>
       </section>
       <!--SECTION 1-->
@@ -128,20 +128,52 @@
       <section  class="section ">
         <div class="w3-cointainer ">
             <div class="w3-card-4">
-                <div class="w3-container w3-green">
+                <div class="w3-container w3-dark-grey">
                   <h2>contact us</h2>
                 </div>
-                    <form class="w3-container">
+                    <form class="w3-container w3-padding-xlarge">
                     <label> Name</label>
                     <input class="w3-input" type="text">              
                     <label>Email</label>
                     <input class="w3-input" type="email">
                     <label class="w3-input" for="message">Message</label>
                     <textarea class="w3-input w3-border" name="" style="resize: none;"></textarea>
+                    <br>
+                    <button type="submit " class="w3-button w3-center">Submit</button>
+                    <br>
                     </form>
                 </div>
         </div>
       </section>
+      <!--footer-->
+      <footer class="w3-black w3-padding-xlarge w3-center">
+        <p>Shanga &copy;2023 </p>
+      </footer>
+      <!--modal-->
+      <div id="start-modal" class="w3-modal">
+        <div class="modal-content">
+            <header class="w3-cointainer w3-red">
+                <span onclick="document.getElementById('start-modal').style.display='none'">&times;</span>
+                <h2>Get Started</h2>
+            </header>
+            <div class="w3-cointainer">
+                <form action="">
+                    <div class="w3-section">
+                        <label for="">Name</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text"  placeholder="Enter name">
+                        <label for="">Username</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text"  placeholder="Enter username">
+                        <label for="">Password</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="password"  placeholder="Enter Password">
+                        <label for="">Confirm password</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="password"  placeholder="Enter Password">
+                        <button class="w3-black w3-block w3-section w3-padding" >Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+      </div>
       <script>
         function shangaFunction(id) {
           var x = document.getElementById(id);
